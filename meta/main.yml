@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: server
   author: solutionDrive
   description: Role for generell server tasks
   company: solutionDrive
