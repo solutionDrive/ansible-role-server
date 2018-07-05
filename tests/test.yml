@@ -6,6 +6,8 @@
       apt: update_cache=yes cache_valid_time=600
       when: ansible_os_family == 'Debian'
 
-  roles:
-    - tersmitten.locales
-    - role_under_test
+  tasks:
+    - include_role:
+        name: tersmitten.locales
+    - include_role:
+        name: role_under_test
