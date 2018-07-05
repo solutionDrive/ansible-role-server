@@ -22,4 +22,5 @@ galaxy_info:
   galaxy_tags:
     - server
 
-dependencies: []
+dependencies:
+  - { role: oefenweb.locales }
