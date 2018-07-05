@@ -9,6 +9,5 @@
   tasks:
     - include_role:
         name: tersmitten.locales
-      changed_when: false
     - include_role:
         name: role_under_test
