@@ -7,5 +7,5 @@
       when: ansible_os_family == 'Debian'
 
   roles:
-    - stouts.locale
+    - tersmitten.locales
     - role_under_test

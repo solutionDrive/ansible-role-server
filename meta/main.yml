@@ -23,4 +23,4 @@ galaxy_info:
     - server
 
 dependencies:
-  - { role: stouts.locale }
+  - { role: tersmitten.locales }
