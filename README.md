@@ -16,7 +16,7 @@ Role Variables
 Dependencies
 ------------
 
-none
+role stouts.locale
 
 Example Playbook
 ----------------
