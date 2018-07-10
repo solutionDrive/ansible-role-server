@@ -22,4 +22,4 @@ galaxy_info:
     - server
 
 dependencies:
-  - { role: tersmitten.locales }
+  - { role: oefenweb.locales }
