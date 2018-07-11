@@ -1,6 +1,12 @@
 ---
+- name: "Ensure conf path exists"
+  file:
+    path: "{{ server_apt_timer_conf_path }}"
+    state: directory
+  when: "{{ server_apt_disable_persistent_directive }}"
+
 - name: "Disable persistent directive when configured"
   template:
     src: "apt-daily.timer.conf.j2"
-    dest: "/etc/systemd/system/apt-daily.timer.d/apt-daily.timer.conf"
+    dest: "{{ server_apt_timer_conf_path }}apt-daily.timer.conf"
   when: "{{ server_apt_disable_persistent_directive }}"
