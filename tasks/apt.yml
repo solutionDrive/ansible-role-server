@@ -1,0 +1,9 @@
+---
+- name: "Disable persistent directive when configured"
+  lineinfile:
+    dest: "/etc/systemd/system/apt-daily.timer.d/apt-daily.timer.conf"
+    line: "[Timer]
+           Persistent=false"
+    create: yes
+    state: present
+  when: "{{ server_apt_disable_persistent_directive }}"

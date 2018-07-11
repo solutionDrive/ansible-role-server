@@ -1,2 +1,6 @@
 ---
 timezone: 'Europe/Berlin'
+
+// https://github.com/geerlingguy/packer-ubuntu-1604/issues/3#issuecomment-219257091
+// Disable the persistent directive to prevent an apt run on next system start
+server_apt_disable_persistent_directive: true
